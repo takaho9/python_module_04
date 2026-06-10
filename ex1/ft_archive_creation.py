@@ -34,13 +34,13 @@ def main() -> None:
     if new_file_path == "":
         print("Not saving data.")
         return
+    print(f"Saving data to '{new_file_path}'")
     try:
         f = open(new_file_path, "w")
     except OSError as e:
         print(f"Error opening file '{new_file_path}': {e}")
         print("Data not saved.")
         return
-    print(f"Saving data to '{new_file_path}'")
     f.write(content)
     print(f"Data saved in file '{new_file_path}'.")
     f.close()

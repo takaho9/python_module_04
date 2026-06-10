@@ -2,7 +2,7 @@ import sys
 
 
 def main() -> None:
-    if (len(sys.argv) < 2):
+    if len(sys.argv) < 2:
         print(f"Usage: {sys.argv[0]} <file>")
         return
     print("=== Cyber Archives Recovery ===")
