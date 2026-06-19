@@ -40,7 +40,10 @@ def main() -> None:
     try:
         f = open(new_file_path, "w")
     except OSError as e:
-        print(f"[STDERR] Error opening file '{new_file_path}': {e}", file=sys.stderr)
+        print(
+            f"[STDERR] Error opening file '{new_file_path}': {e}",
+            file=sys.stderr
+        )
         print("Data not saved.")
         return
     f.write(content)
